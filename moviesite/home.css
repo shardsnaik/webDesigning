@@ -1,0 +1,93 @@
+.menu{
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    cursor:pointer;
+    border: none;
+}
+.list {
+    background-color: antiquewhite;
+    padding: 25px;
+    justify-content: space-between;
+    display:none;
+    /* its imaportant first we have to hide  */
+    text-decoration: none;
+}
+.list a{
+    color: black;
+}
+.list a:hover{
+background-color: azure;
+}
+.main:hover .list{
+    display: flex;
+    /* on hover it will redirected to list property and make display flex */
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    color: white;
+}
+.topnav{
+    overflow: hidden;
+    background-color: black;
+    padding: 10px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.search-container{
+    float: right;
+    /* border-radius: 170px; */
+    margin-top: 17px;
+}
+form {
+    background-color: black;
+    width: 191px;
+    height: 33px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+input{
+all: unset;
+font: 14px system-ul;
+color: aliceblue;
+height: 100%;
+width: 100%;
+padding: 6px 8px;
+}
+
+.thumbnail{
+    height: 300px;
+    width: 350px;
+    border-radius: 19px;
+}
+.coloum{
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+
+}
+
+
+.card{
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #211d1d;
+}
