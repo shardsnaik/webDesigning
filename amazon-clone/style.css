@@ -1,0 +1,91 @@
+/* h1  { 
+    color: rgb(255, 0, 0);
+  
+}
+body { background-color: rgb(230, 236, 216);}
+
+* { color: palevioletred;
+}
+h3{ background-color: red;}
+#idone{
+    color: black;
+}
+ .nandclass{
+    color: rgb(70, 100, 26);
+    text-decoration: dotted;
+     font-weight: lighter; 
+}
+ a {
+    text-decoration: dotted;
+} 
+#pixel{
+    font-size: 33px;
+}
+#outer{
+    font-size: 25px;
+}
+#inner { font-size: 10px;}
+
+ #navbar{
+    background-color: rgb(10, 9, 9);
+    height:40px;
+}
+a{
+    
+    align-self: auto;
+    text-align: right;
+    margin-right: 100px;
+ } */
+
+
+ body{
+    text-align: center;
+    
+ }
+
+ div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2PX solid black;
+  
+    /* justify-content: space-evenly; */
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+#container{
+   
+
+   width: 800px;
+   height: 200px; 
+   display: flex;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: black;
+}
+#box3{
+    background-color: blueviolet;
+    
+}
+#box4{
+    background-color: PINK;
+}
+#box5{
+    background-color: yellow;
+}
+
+@media(max-width: 300px;){
+    #box1{
+    background-color:  red;
+    }
+ }
+
+#box1:hover{ 
+     background-color: black; 
+     font-size: large;
+     color: white;
+    }
