@@ -73,13 +73,16 @@ padding: 6px 8px;
 }
 
 .thumbnail{
-    height: 300px;
-    width: 350px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+
     border-radius: 19px;
 }
 .coloum{
     float: left;
     width: 25%;
+    height: 125vh;
     padding: 10px 10px;
 
 }
@@ -90,4 +93,8 @@ padding: 6px 8px;
     padding: 15px;
     text-align: center;
     background-color: #211d1d;
+}
+.overview, .release-date, .popularity {
+    margin: 10px 0;
+    color: white;
 }

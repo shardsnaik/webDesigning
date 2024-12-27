@@ -12,9 +12,9 @@ showmenu = () => {
 // }
 
 
-const APILINK = " https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a03b51423e78227c2385d5159d64db84&page=1";
-const IMG_PATH =" https://image.tmbd.org/t/p/w1288"
-const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=a03b51423e78227c2385d5159d64db84&query="
+const APILINK = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=a03b51423e78227c2385d5159d64db84&page=1";
+const IMG_PATH = "https://image.tmdb.org/t/p/w500";
+const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=a03b51423e78227c2385d5159d64db84&query=";
 
 const main = document.getElementById("section");
 const form = document.getElementById("form");
@@ -42,14 +42,32 @@ function returnMovies(url){
             const title = document.createElement('h3');
             title.setAttribute('id', 'title');
 
+            
+            const overview = document.createElement('p');
+            overview.setAttribute('class', 'overview');
+
+            const releaseDate = document.createElement('p');
+            releaseDate.setAttribute('class', 'release-date');
+
+            const popularity = document.createElement('p');
+            popularity.setAttribute('class', 'popularity');
+
+
             const center = document.createElement('center');
 
             title.innerHTML = `${element.title}`;
-            image.src = IMG_PATH + element.poster_path;
+            image.src = IMG_PATH +element.poster_path;
+            overview.innerHTML = `Overview: ${element.overview}`;
+            releaseDate.innerHTML = `Release Date: ${element.release_date}`;
+            popularity.innerHTML = `Popularity: ${element.popularity}`;
+
 
             center.appendChild(image)
             div_card.appendChild(center);
             div_card.appendChild(title);
+            div_card.appendChild(overview);
+            div_card.appendChild(releaseDate);
+            div_card.appendChild(popularity);
             div_coloum.appendChild(div_card);
             div_row.appendChild(div_coloum);
 
