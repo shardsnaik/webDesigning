@@ -98,3 +98,69 @@ padding: 6px 8px;
     margin: 10px 0;
     color: white;
 }
+
+
+
+
+@media (max-width: 600px) {
+    .menu {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .list a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-container input {
+        width: 90%;
+        padding: 10px;
+    }
+    .coloum {
+        overflow: hidden;
+        display: flex;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        height: 25vh;
+        padding: 0;
+    }
+    
+    h3 {
+        color: white;
+        font-size: 1.5vh;
+    margin: .3vh;
+    }
+    
+    .column p {
+        color: white;
+        margin-bottom: 10px;
+        font-size: 1vh
+    }
+.overview{
+    display: none;
+}
+.release-date, .popularity{
+    font-size: 1vh;
+    margin: 0;
+}
+
+
+
+}
+
+/* ...existing code... */
